@@ -331,7 +331,7 @@ function generarGraficas() {
 
         // Contar por Estado
         let estado = (reporte.Estado || "").toUpperCase();
-        if (estado.includes("VERDE") || estado.includes("OK")) estadoVerde++;
+        if (estado.includes("VERDE") || estado.includes("ÓPTIMO")) estadoVerde++;
         else if (estado.includes("AMARILLO") || estado.includes("ESTABLE")) estadoAmarillo++;
         else if (estado.includes("ROJO") || estado.includes("CRÍTICO")) estadoRojo++;
     });
